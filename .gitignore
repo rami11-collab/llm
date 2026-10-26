@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+state/
+runtime/bin/
+runtime/models/
+runtime/*.zip
+runtime/download_parts/
+evaluation/results/.incomplete*

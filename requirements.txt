@@ -1,0 +1,2 @@
+# Tested dependency closure for Python 3.12.
+-r requirements-lock.txt
