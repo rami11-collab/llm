@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-10-26T13:18:57.508365+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "library_versions": {
+    "langgraph": "1.2.17",
+    "numpy": "2.5.4",
+    "requests": "2.34.2",
+    "matplotlib": "3.11.2"
+  },
+  "llama_cpp_release": "b11899",
+  "models": [
+    {
+      "filename": "all-MiniLM-L6-v2-Q8_0.gguf",
+      "bytes": 25008064,
+      "sha256": "263215c3cadd6e16740741a7624ab4cbb6c8e777688bd5331ecfbf5681c2f8ed"
+    },
+    {
+      "filename": "Qwen3-0.6B-Q4_K_M.gguf",
+      "bytes": 396705472,
+      "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+    }
+  ],
+  "settings": {
+    "llm_url": "http://127.0.0.1:8091",
+    "embedding_url": "http://127.0.0.1:8092",
+    "model_name": "Qwen3-0.6B-Q4_K_M",
+    "embedding_name": "all-MiniLM-L6-v2-Q8_0",
+    "top_k": 3,
+    "retrieval_threshold": 0.3,
+    "llm_timeout": 90.0,
+    "tool_timeout": 12.0,
+    "seed": 42,
+    "corpus_path": "C:\\Users\\ramia\\Documents\\Codex\\2026-10-26\\for-assignments-1-and-3-please\\work\\project\\evidencedesk\\data\\corpus.json",
+    "state_dir": "C:\\Users\\ramia\\Documents\\Codex\\2026-10-26\\for-assignments-1-and-3-please\\work\\project\\evidencedesk\\state"
+  },
+  "inference": {
+    "temperature": 0,
+    "seed": 42,
+    "answer_max_tokens": 420,
+    "planner_max_tokens": 128
+  },
+  "backend_sha256": {
+    "evidencedesk\\__init__.py": "9ad8fcff0e058e37fda19465949dfd8e37cc6599869b9ea57f802c4dc708b1e5",
+    "evidencedesk\\agent.py": "fdff074448e7c8cc35d8238f2858449ff3735bf162cff2dc164bd102bee89055",
+    "evidencedesk\\config.py": "9a42668710dea9812f89dda4898ac54df634c26519c9de39a24bde89c9b05ff0",
+    "evidencedesk\\llm.py": "862d740820e2e2b2be4ca9b988f76e2cb375eba285a136dae5571ad00861ec5f",
+    "evidencedesk\\retrieval.py": "9a0544bf882c82062ae51c95b285b3b3f8748df87de02d07ed14296b697c08ec",
+    "evidencedesk\\store.py": "d7c5c25dd10bfa466f87e847396969adc7a9871b5baec88e09e7fa3b81c5a417",
+    "evidencedesk\\tools.py": "e8fe6fd632e8d882335efcbac9a909af7facbdc3304d1d8b31de37e2fc57df2f"
+  },
+  "corpus_sha256": "36a9e480012eadbc2f0213aa56d5f74844eb294d8b3492b6e3fe252cbc49ad9f",
+  "cases_sha256": "abdb24ccab9cbe70695e4d8fb6d581dfcc27c3fd200b73dc60273f7f67eddc31",
+  "mode_order_within_each_content_case": [
+    "llm",
+    "basic",
+    "agent"
+  ],
+  "timing_policy": "One sequential request at a time; no automatic retry; setup and model hashing excluded. Local model processes already running; document index and 20 retrieval probes run before timed content requests. Existing external-tool cache allowed and status recorded.",
+  "interpretation": [
+    "Twenty authored answerable, six unanswerable corpus cases across three end-to-end variants, plus six full-agent tool/auditor cases: 84 actual ask calls.",
+    "Full agent may rewrite retrieval queries; basic RAG uses the original question. This is not a pure auditor-only causal ablation.",
+    "Mechanical validity means supplied source-ID plus contiguous normalized quote plus nonempty claim. It does not establish semantic entailment or truth.",
+    "Closed-book LLM has no source access. Its mechanical citation count is retained transparently but source-validity is not an applicable comparison metric.",
+    "Keyword coverage is a predeclared lexical heuristic, not semantic answer accuracy. Human semantic review fields remain blank.",
+    "Four external routing attempts and upstream successes are separate from two automatic auditor-node invocations. Audit is not one of the planner's selectable actions.",
+    "All questions and labels are separate from the eleven-document indexed corpus; no test questions are indexed.",
+    "One deterministic-seed run on one small curated corpus has no confidence interval or broad benchmark/SOTA claim. Cached tool latency is not live upstream latency."
+  ],
+  "run_id": "frozen-20261026T131857Z-ca74af",
+  "health_at_start": {
+    "llm": true,
+    "embeddings": true
+  },
+  "finished_utc": "2026-10-26T13:28:11.952063+00:00",
+  "backend_unchanged_at_finish": true,
+  "corpus_unchanged_at_finish": true,
+  "cases_unchanged_at_finish": true
+}

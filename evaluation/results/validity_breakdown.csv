@@ -1,0 +1,7 @@
+﻿mode,stage,content_cases,source_comparison_applicable,all_claims,source_ID_membership_valid,source_ID_membership_rate,contiguous_quote_valid,contiguous_quote_rate,all_mechanical_checks_valid,all_mechanical_checks_rate,semantic_support_measured
+llm,generated,26,False,19,0,0.0,0,0.0,0,0.0,False
+llm,delivered,26,False,18,0,0.0,0,0.0,0,0.0,False
+basic,generated,26,True,26,26,1.0,26,1.0,26,1.0,False
+basic,delivered,26,True,25,25,1.0,25,1.0,25,1.0,False
+agent,generated,26,True,16,16,1.0,15,0.9375,15,0.9375,False
+agent,delivered,26,True,14,14,1.0,14,1.0,14,1.0,False

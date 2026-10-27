@@ -1,0 +1,4 @@
+﻿mode,content_cases,answerable_cases,unanswerable_cases,errors,answerable_answered,answerable_coverage,unanswerable_abstained,unanswerable_abstention_rate,unanswerable_answered,generated_claims,generated_valid_claims,generated_mechanical_validity,delivered_claims,delivered_valid_claims,delivered_mechanical_validity,delivered_invalid_claims,citation_applicable,answerable_with_valid_delivered_claim,answerable_valid_claim_coverage,keyword_complete_count_heuristic,keyword_complete_rate_heuristic,keyword_group_coverage_mean_heuristic,latency_median_seconds,latency_mean_seconds
+llm,26,20,6,0,19,0.95,2,0.3333333333333333,4,19,0,0.0,18,0,0.0,18,False,0,0.0,2,0.1,0.17666666666666667,1.282637600000271,1.4320755615386729
+basic,26,20,6,0,19,0.95,0,0.0,6,26,26,1.0,25,25,1.0,0,True,19,0.95,8,0.4,0.425,4.468405050000001,4.418480584615422
+agent,26,20,6,0,13,0.65,5,0.8333333333333334,1,16,15,0.9375,14,14,1.0,0,True,13,0.65,6,0.3,0.325,3.493785100000423,14.439517511538375

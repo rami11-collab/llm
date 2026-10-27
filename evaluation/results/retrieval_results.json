@@ -1,0 +1,482 @@
+[
+  {
+    "case_id": "A01",
+    "question": "Which survey organizes agentic RAG by the number of agents, control structure, autonomy, and knowledge representation?",
+    "expected_source_ids": [
+      "P01"
+    ],
+    "top_3": [
+      {
+        "id": "P01",
+        "score": 0.5937892198562622
+      },
+      {
+        "id": "P11",
+        "score": 0.5401788353919983
+      },
+      {
+        "id": "P03",
+        "score": 0.4156525731086731
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.019681300000229385
+  },
+  {
+    "case_id": "A02",
+    "question": "What unresolved design issues are identified in Singh and colleagues' Agentic RAG survey?",
+    "expected_source_ids": [
+      "P01"
+    ],
+    "top_3": [
+      {
+        "id": "P01",
+        "score": 0.38949182629585266
+      },
+      {
+        "id": "P11",
+        "score": 0.3880636394023895
+      },
+      {
+        "id": "P05",
+        "score": 0.31251728534698486
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.018952399999761838
+  },
+  {
+    "case_id": "A03",
+    "question": "What does Search-R1 learn to issue while reasoning, and how is that behavior trained?",
+    "expected_source_ids": [
+      "P02"
+    ],
+    "top_3": [
+      {
+        "id": "P02",
+        "score": 0.5917245149612427
+      },
+      {
+        "id": "P03",
+        "score": 0.5309001207351685
+      },
+      {
+        "id": "P04",
+        "score": 0.3997431993484497
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.01643580000018119
+  },
+  {
+    "case_id": "A04",
+    "question": "Across how many question-answering datasets does the Search-R1 paper evaluate its method?",
+    "expected_source_ids": [
+      "P02"
+    ],
+    "top_3": [
+      {
+        "id": "P02",
+        "score": 0.6018229722976685
+      },
+      {
+        "id": "P11",
+        "score": 0.45340049266815186
+      },
+      {
+        "id": "P05",
+        "score": 0.42753052711486816
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.007939600000099745
+  },
+  {
+    "case_id": "A05",
+    "question": "What factors does the May 2025 empirical study of reasoning-search agents vary?",
+    "expected_source_ids": [
+      "P03"
+    ],
+    "top_3": [
+      {
+        "id": "P03",
+        "score": 0.5931040048599243
+      },
+      {
+        "id": "P02",
+        "score": 0.5025440454483032
+      },
+      {
+        "id": "P11",
+        "score": 0.48876041173934937
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.0071046000011847354
+  },
+  {
+    "case_id": "A06",
+    "question": "What methodological lesson does the empirical reasoning-search study give for comparing project variants?",
+    "expected_source_ids": [
+      "P03"
+    ],
+    "top_3": [
+      {
+        "id": "P02",
+        "score": 0.42965155839920044
+      },
+      {
+        "id": "P09",
+        "score": 0.4226548373699188
+      },
+      {
+        "id": "P03",
+        "score": 0.3989000916481018
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.030044400000406313
+  },
+  {
+    "case_id": "A07",
+    "question": "How does DeepResearcher's training setting differ from fixed-corpus RAG?",
+    "expected_source_ids": [
+      "P04"
+    ],
+    "top_3": [
+      {
+        "id": "P09",
+        "score": 0.45959004759788513
+      },
+      {
+        "id": "P07",
+        "score": 0.4554315209388733
+      },
+      {
+        "id": "P04",
+        "score": 0.3664851188659668
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.018966900001032627
+  },
+  {
+    "case_id": "A08",
+    "question": "Does EvidenceDesk reproduce DeepResearcher's policy training or claim equivalent capability?",
+    "expected_source_ids": [
+      "P04"
+    ],
+    "top_3": [
+      {
+        "id": "P08",
+        "score": 0.5737507343292236
+      },
+      {
+        "id": "P09",
+        "score": 0.5274231433868408
+      },
+      {
+        "id": "P04",
+        "score": 0.5243121385574341
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.007167899999330984
+  },
+  {
+    "case_id": "A09",
+    "question": "How many browsing questions are included in BrowseComp?",
+    "expected_source_ids": [
+      "P05"
+    ],
+    "top_3": [
+      {
+        "id": "P05",
+        "score": 0.6204328536987305
+      },
+      {
+        "id": "P04",
+        "score": 0.2907770872116089
+      },
+      {
+        "id": "P09",
+        "score": 0.24018709361553192
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.005649999999150168
+  },
+  {
+    "case_id": "A10",
+    "question": "What user-query capabilities are not fully captured by BrowseComp's short-answer browsing tasks?",
+    "expected_source_ids": [
+      "P05"
+    ],
+    "top_3": [
+      {
+        "id": "P05",
+        "score": 0.743004560470581
+      },
+      {
+        "id": "P11",
+        "score": 0.40110263228416443
+      },
+      {
+        "id": "P04",
+        "score": 0.3801926374435425
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.008412700000917539
+  },
+  {
+    "case_id": "A11",
+    "question": "What context does CiteEval consider beyond a single cited passage?",
+    "expected_source_ids": [
+      "P06"
+    ],
+    "top_3": [
+      {
+        "id": "P06",
+        "score": 0.6580323576927185
+      },
+      {
+        "id": "P10",
+        "score": 0.3476037383079529
+      },
+      {
+        "id": "P07",
+        "score": 0.201032817363739
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.012025199999698089
+  },
+  {
+    "case_id": "A12",
+    "question": "Does an exact quote existing in a source prove the surrounding claim is supported? Explain using the CiteEval note.",
+    "expected_source_ids": [
+      "P06"
+    ],
+    "top_3": [
+      {
+        "id": "P06",
+        "score": 0.5659174919128418
+      },
+      {
+        "id": "P10",
+        "score": 0.24995601177215576
+      },
+      {
+        "id": "P08",
+        "score": 0.2040252983570099
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.006328800000119372
+  },
+  {
+    "case_id": "A13",
+    "question": "How many expert tasks and fields does DeepResearch Bench describe?",
+    "expected_source_ids": [
+      "P07"
+    ],
+    "top_3": [
+      {
+        "id": "P07",
+        "score": 0.6949267387390137
+      },
+      {
+        "id": "P09",
+        "score": 0.6634798049926758
+      },
+      {
+        "id": "P04",
+        "score": 0.46607404947280884
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.004874900001595961
+  },
+  {
+    "case_id": "A14",
+    "question": "Which evaluation aspects does DeepResearch Bench distinguish?",
+    "expected_source_ids": [
+      "P07"
+    ],
+    "top_3": [
+      {
+        "id": "P07",
+        "score": 0.6556510925292969
+      },
+      {
+        "id": "P09",
+        "score": 0.6165506839752197
+      },
+      {
+        "id": "P04",
+        "score": 0.43209999799728394
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.02184090000082506
+  },
+  {
+    "case_id": "A15",
+    "question": "Which two failure modes does GRACE address?",
+    "expected_source_ids": [
+      "P08"
+    ],
+    "top_3": [
+      {
+        "id": "P08",
+        "score": 0.34759825468063354
+      },
+      {
+        "id": "P02",
+        "score": 0.08943857252597809
+      },
+      {
+        "id": "P01",
+        "score": 0.07276401668787003
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.0146788000001834
+  },
+  {
+    "case_id": "A16",
+    "question": "Is GRACE merely prompt-based refusal, or does it train an answering-and-abstention policy?",
+    "expected_source_ids": [
+      "P08"
+    ],
+    "top_3": [
+      {
+        "id": "P08",
+        "score": 0.5370105504989624
+      },
+      {
+        "id": "P02",
+        "score": 0.2365250289440155
+      },
+      {
+        "id": "P11",
+        "score": 0.1588124781847
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.007419999999910942
+  },
+  {
+    "case_id": "A17",
+    "question": "How many tasks, domains, and binary rubric items are in DeepResearch Bench II?",
+    "expected_source_ids": [
+      "P09"
+    ],
+    "top_3": [
+      {
+        "id": "P07",
+        "score": 0.651829183101654
+      },
+      {
+        "id": "P09",
+        "score": 0.6131604909896851
+      },
+      {
+        "id": "P04",
+        "score": 0.4468211829662323
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.0077158000003691996
+  },
+  {
+    "case_id": "A18",
+    "question": "What three assessment dimensions does DeepResearch Bench II separate?",
+    "expected_source_ids": [
+      "P09"
+    ],
+    "top_3": [
+      {
+        "id": "P09",
+        "score": 0.5047473907470703
+      },
+      {
+        "id": "P07",
+        "score": 0.4927680492401123
+      },
+      {
+        "id": "P04",
+        "score": 0.3144887685775757
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.018077500000799773
+  },
+  {
+    "case_id": "A19",
+    "question": "Which bibliographic retrieval approaches does Atlas compare, and which qualities does it measure?",
+    "expected_source_ids": [
+      "P10"
+    ],
+    "top_3": [
+      {
+        "id": "P10",
+        "score": 0.6848295331001282
+      },
+      {
+        "id": "P06",
+        "score": 0.431871622800827
+      },
+      {
+        "id": "P07",
+        "score": 0.3867022693157196
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.017932499999005813
+  },
+  {
+    "case_id": "A20",
+    "question": "According to the data-centric Agentic RAG survey, what do interactive agent tasks require beyond static question-document pairs?",
+    "expected_source_ids": [
+      "P11"
+    ],
+    "top_3": [
+      {
+        "id": "P11",
+        "score": 0.6266905069351196
+      },
+      {
+        "id": "P01",
+        "score": 0.5406423211097717
+      },
+      {
+        "id": "P05",
+        "score": 0.42968863248825073
+      }
+    ],
+    "recall_at_3": 1.0,
+    "recall_at_3_after_threshold": 1.0,
+    "latency_seconds": 0.019398700000238023
+  }
+]

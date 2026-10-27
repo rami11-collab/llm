@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "A07",
+    "generated": 1,
+    "generated_valid": 0,
+    "delivered": 0,
+    "delivered_valid": 0,
+    "abstained": true
+  },
+  {
+    "case_id": "A15",
+    "generated": 1,
+    "generated_valid": 1,
+    "delivered": 0,
+    "delivered_valid": 0,
+    "abstained": true
+  }
+]
