@@ -1,0 +1,34 @@
+{
+  "platform": "Windows x64 CPU",
+  "assets": [
+    {
+      "filename": "Qwen3-0.6B-Q4_K_M.gguf",
+      "size": 396705472,
+      "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+      "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf",
+      "kind": "model",
+      "repo": "unsloth/Qwen3-0.6B-GGUF",
+      "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+      "license": "Apache-2.0"
+    },
+    {
+      "filename": "all-MiniLM-L6-v2-Q8_0.gguf",
+      "size": 25008064,
+      "sha256": "263215c3cadd6e16740741a7624ab4cbb6c8e777688bd5331ecfbf5681c2f8ed",
+      "url": "https://huggingface.co/second-state/All-MiniLM-L6-v2-Embedding-GGUF/resolve/544f204f2eaa2d71361ffc74d6df7170285b286a/all-MiniLM-L6-v2-Q8_0.gguf",
+      "kind": "model",
+      "repo": "second-state/All-MiniLM-L6-v2-Embedding-GGUF",
+      "revision": "544f204f2eaa2d71361ffc74d6df7170285b286a",
+      "license": "Apache-2.0"
+    },
+    {
+      "filename": "llama-b11899-bin-win-cpu-x64.zip",
+      "size": 24228262,
+      "sha256": "8c3fc277ef304707b02240ff1b0b1b92979bbb18232a9f2039c4d3c4bb3ca0af",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11899/llama-b11899-bin-win-cpu-x64.zip",
+      "kind": "runtime",
+      "release": "b11899",
+      "license": "MIT"
+    }
+  ]
+}

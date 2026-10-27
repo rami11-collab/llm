@@ -1,0 +1,116 @@
+{
+  "corpus_policy": "Only original curated notes and the explicitly identified short CC-BY passages are redistributed. Non-exclusive arXiv full texts are not bundled.",
+  "acl_license_proof": "https://aclanthology.org/faq/copyright/",
+  "notes_license": "https://creativecommons.org/licenses/by/4.0/",
+  "quoted_source_passages": [
+    {
+      "paper_id": "P04",
+      "title": "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "authors": [
+        "Yuxiang Zheng",
+        "Dayuan Fu",
+        "Xiangkun Hu",
+        "Xiaojie Cai",
+        "Lyumanshan Ye",
+        "Pengrui Lu",
+        "Pengfei Liu"
+      ],
+      "source_url": "https://aclanthology.org/2025.emnlp-main.22/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://aclanthology.org/faq/copyright/",
+      "excerpt_word_count": 17,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    },
+    {
+      "paper_id": "P06",
+      "title": "CiteEval: Principle-Driven Citation Evaluation for Source Attribution",
+      "authors": [
+        "Yumo Xu",
+        "Peng Qi",
+        "Jifan Chen",
+        "Kunlun Liu",
+        "Rujun Han",
+        "Lan Liu",
+        "Bonan Min",
+        "Vittorio Castelli",
+        "Arshit Gupta",
+        "Zhiguo Wang"
+      ],
+      "source_url": "https://aclanthology.org/2025.acl-long.1574/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://aclanthology.org/faq/copyright/",
+      "excerpt_word_count": 16,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    },
+    {
+      "paper_id": "P07",
+      "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+      "authors": [
+        "Mingxuan Du",
+        "Benfeng Xu",
+        "Chiwei Zhu",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "source_url": "https://arxiv.org/abs/2506.11763v1",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://arxiv.org/abs/2506.11763",
+      "excerpt_word_count": 18,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    },
+    {
+      "paper_id": "P08",
+      "title": "GRACE: Reinforcement Learning for Grounded Response and Abstention under Contextual Evidence",
+      "authors": [
+        "Yibo Zhao",
+        "Jiapeng Zhu",
+        "Zichen Ding",
+        "Xiang Li"
+      ],
+      "source_url": "https://arxiv.org/abs/2601.04525v1",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://arxiv.org/abs/2601.04525",
+      "excerpt_word_count": 17,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    },
+    {
+      "paper_id": "P10",
+      "title": "Atlas: Customizing Large Language Models for Reliable Bibliographic Retrieval and Verification",
+      "authors": [
+        "Akash Kodali",
+        "Hailu Xu",
+        "Wenlu Zhang",
+        "Xin Qin"
+      ],
+      "source_url": "https://aclanthology.org/2025.wasp-main.14/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://aclanthology.org/faq/copyright/",
+      "excerpt_word_count": 17,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    },
+    {
+      "paper_id": "P11",
+      "title": "Data-Centric Perspectives on Agentic Retrieval-Augmented Generation: A Survey",
+      "authors": [
+        "Jingwen Deng",
+        "Jihao Huang",
+        "Zhen Hao Wong",
+        "Hao Liang",
+        "Quanqing Xu",
+        "Bin Cui",
+        "Wentao Zhang"
+      ],
+      "source_url": "https://aclanthology.org/2026.findings-acl.78/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "license_proof": "https://aclanthology.org/faq/copyright/",
+      "excerpt_word_count": 22,
+      "location": "Abstract",
+      "alterations": "Excerpt selected; no wording altered."
+    }
+  ]
+}

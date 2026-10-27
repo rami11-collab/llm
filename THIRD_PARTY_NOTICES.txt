@@ -1,0 +1,30 @@
+EvidenceDesk uses the following third-party components. Their authors retain
+their rights; this file does not replace the upstream license terms.
+
+Qwen3-0.6B (Qwen team), quantized GGUF distributed by Unsloth:
+  Apache-2.0. https://huggingface.co/Qwen/Qwen3-0.6B
+  https://huggingface.co/unsloth/Qwen3-0.6B-GGUF
+  The tested quantized file/revision/hash are in runtime/manifest.json.
+
+all-MiniLM-L6-v2 (Sentence Transformers), GGUF conversion by Second State:
+  Apache-2.0. https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+  https://huggingface.co/second-state/All-MiniLM-L6-v2-Embedding-GGUF
+
+llama.cpp (ggml-org and contributors): MIT.
+  https://github.com/ggml-org/llama.cpp/tree/b11899
+  https://github.com/ggml-org/llama.cpp/blob/b11899/LICENSE
+  The official binary includes LLVM OpenMP; retain its included license notice.
+
+LangGraph / LangChain components: upstream MIT licenses.
+NumPy: BSD-3-Clause. Requests: Apache-2.0. psutil: BSD-3-Clause.
+See the installed package distributions for complete dependency license files.
+
+Crossref public metadata API:
+  https://www.crossref.org/documentation/retrieve-metadata/
+arXiv API:
+  https://info.arxiv.org/help/api/index.html
+Respect service terms, rate limits, and the rights in underlying paper text.
+
+The bundled research notes are original concise summaries with attribution.
+Individual original-paper excerpts and their licenses are documented explicitly
+in data/license_manifest.json. Non-exclusive arXiv full texts are not bundled.

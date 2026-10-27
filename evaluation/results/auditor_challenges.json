@@ -1,0 +1,184 @@
+[
+  {
+    "case_id": "C01",
+    "description": "Valid source and contiguous quote",
+    "claim": {
+      "text": "GRACE studies grounding and insufficient evidence.",
+      "source_id": "P08",
+      "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient."
+    },
+    "expected_mechanical_pass": true,
+    "actual_mechanical_pass": true,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE studies grounding and insufficient evidence.",
+          "source_id": "P08",
+          "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient.",
+          "valid": true,
+          "reason": "Source ID and quoted span match the supplied evidence."
+        }
+      ],
+      "passed": 1,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C02",
+    "description": "Unknown source ID",
+    "claim": {
+      "text": "GRACE studies grounding and insufficient evidence.",
+      "source_id": "P99",
+      "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient."
+    },
+    "expected_mechanical_pass": false,
+    "actual_mechanical_pass": false,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE studies grounding and insufficient evidence.",
+          "source_id": "P99",
+          "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient.",
+          "valid": false,
+          "reason": "Source ID was not supplied to the answer generator."
+        }
+      ],
+      "passed": 0,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C03",
+    "description": "Fabricated quotation",
+    "claim": {
+      "text": "GRACE studies grounding and insufficient evidence.",
+      "source_id": "P08",
+      "quote": "This system guarantees perfect accuracy."
+    },
+    "expected_mechanical_pass": false,
+    "actual_mechanical_pass": false,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE studies grounding and insufficient evidence.",
+          "source_id": "P08",
+          "quote": "This system guarantees perfect accuracy.",
+          "valid": false,
+          "reason": "Quote does not match a contiguous span in the supplied source."
+        }
+      ],
+      "passed": 0,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C04",
+    "description": "Noncontiguous quotation",
+    "claim": {
+      "text": "GRACE studies grounding and insufficient evidence.",
+      "source_id": "P08",
+      "quote": "GRACE addresses two failure modes: fabricated answers"
+    },
+    "expected_mechanical_pass": false,
+    "actual_mechanical_pass": false,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE studies grounding and insufficient evidence.",
+          "source_id": "P08",
+          "quote": "GRACE addresses two failure modes: fabricated answers",
+          "valid": false,
+          "reason": "Quote does not match a contiguous span in the supplied source."
+        }
+      ],
+      "passed": 0,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C05",
+    "description": "Quotation below minimum length",
+    "claim": {
+      "text": "GRACE studies grounding and insufficient evidence.",
+      "source_id": "P08",
+      "quote": "GRACE"
+    },
+    "expected_mechanical_pass": false,
+    "actual_mechanical_pass": false,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE studies grounding and insufficient evidence.",
+          "source_id": "P08",
+          "quote": "GRACE",
+          "valid": false,
+          "reason": "Evidence quote is too short to audit (minimum 12 characters)."
+        }
+      ],
+      "passed": 0,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C06",
+    "description": "Empty claim text",
+    "claim": {
+      "text": "",
+      "source_id": "P08",
+      "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient."
+    },
+    "expected_mechanical_pass": false,
+    "actual_mechanical_pass": false,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "",
+          "source_id": "P08",
+          "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient.",
+          "valid": false,
+          "reason": "Claim text is empty."
+        }
+      ],
+      "passed": 0,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  },
+  {
+    "case_id": "C07",
+    "description": "False claim paired with real quote (semantic boundary)",
+    "claim": {
+      "text": "GRACE proves every future AI system is perfectly truthful.",
+      "source_id": "P08",
+      "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient."
+    },
+    "expected_mechanical_pass": true,
+    "actual_mechanical_pass": true,
+    "test_passed": true,
+    "audit": {
+      "checked": [
+        {
+          "text": "GRACE proves every future AI system is perfectly truthful.",
+          "source_id": "P08",
+          "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient.",
+          "valid": true,
+          "reason": "Source ID and quoted span match the supplied evidence."
+        }
+      ],
+      "passed": 1,
+      "total": 1,
+      "scope": "Exact source/quote validation; this is not a semantic truth guarantee."
+    }
+  }
+]

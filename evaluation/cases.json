@@ -1,0 +1,608 @@
+{
+  "name": "EvidenceDesk predeclared corpus and routing cases",
+  "declared_on": "2026-10-26",
+  "version": "1.0",
+  "results": null,
+  "counts": {
+    "answerable": 20,
+    "unanswerable": 6,
+    "tool_routing": 6
+  },
+  "evaluation_policy": [
+    "These are authored tests of the small disclosed corpus, not a standardized external benchmark or evidence of broad generalization.",
+    "Freeze expected labels before model responses are inspected; tune on separate development examples.",
+    "Keyword groups are scoring aids, not a substitute for checking substantive correctness and citation support.",
+    "Treat keyword alternatives within a group as OR and distinct groups as AND when reporting the keyword heuristic.",
+    "Abstention means explicitly acknowledging that the available sources cannot establish the requested answer; do not require one exact refusal phrase.",
+    "Tool-routing success requires actual dispatch to the appropriate tool, not a mere statement that it will be used.",
+    "Record attempted routing, successful upstream completion, and handled network failure separately.",
+    "Map semantic tool roles to the implementation's actual function names and document that mapping.",
+    "Do not include this question/answer file in the retrieval corpus."
+  ],
+  "cases": [
+    {
+      "id": "A01",
+      "category": "answerable",
+      "question": "Which survey organizes agentic RAG by the number of agents, control structure, autonomy, and knowledge representation?",
+      "expected_source_ids": [
+        "P01"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "survey"
+        ],
+        [
+          "control",
+          "autonomy"
+        ]
+      ],
+      "expected_answer_summary": "Singh and colleagues' agentic-RAG survey provides that taxonomy."
+    },
+    {
+      "id": "A02",
+      "category": "answerable",
+      "question": "What unresolved design issues are identified in Singh and colleagues' Agentic RAG survey?",
+      "expected_source_ids": [
+        "P01"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "evaluation"
+        ],
+        [
+          "memory"
+        ],
+        [
+          "efficiency",
+          "governance"
+        ]
+      ],
+      "expected_answer_summary": "The survey identifies evaluation, coordination, memory, efficiency, and governance issues."
+    },
+    {
+      "id": "A03",
+      "category": "answerable",
+      "question": "What does Search-R1 learn to issue while reasoning, and how is that behavior trained?",
+      "expected_source_ids": [
+        "P02"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "search",
+          "queries"
+        ],
+        [
+          "reinforcement",
+          "RL"
+        ]
+      ],
+      "expected_answer_summary": "It learns search queries during reasoning through reinforcement learning."
+    },
+    {
+      "id": "A04",
+      "category": "answerable",
+      "question": "Across how many question-answering datasets does the Search-R1 paper evaluate its method?",
+      "expected_source_ids": [
+        "P02"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "seven",
+          "7"
+        ]
+      ],
+      "expected_answer_summary": "The curated note states seven question-answering datasets."
+    },
+    {
+      "id": "A05",
+      "category": "answerable",
+      "question": "What factors does the May 2025 empirical study of reasoning-search agents vary?",
+      "expected_source_ids": [
+        "P03"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "reward"
+        ],
+        [
+          "initialization",
+          "scale"
+        ],
+        [
+          "search",
+          "engine"
+        ]
+      ],
+      "expected_answer_summary": "It studies reward formulation, model initialization/scale, and search-engine choice."
+    },
+    {
+      "id": "A06",
+      "category": "answerable",
+      "question": "What methodological lesson does the empirical reasoning-search study give for comparing project variants?",
+      "expected_source_ids": [
+        "P03"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "configuration",
+          "document"
+        ],
+        [
+          "component",
+          "one"
+        ]
+      ],
+      "expected_answer_summary": "Document the model/search configuration and change one component at a time."
+    },
+    {
+      "id": "A07",
+      "category": "answerable",
+      "question": "How does DeepResearcher's training setting differ from fixed-corpus RAG?",
+      "expected_source_ids": [
+        "P04"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "web"
+        ],
+        [
+          "reinforcement",
+          "training"
+        ]
+      ],
+      "expected_answer_summary": "It trains research agents with reinforcement learning on real web-search interactions."
+    },
+    {
+      "id": "A08",
+      "category": "answerable",
+      "question": "Does EvidenceDesk reproduce DeepResearcher's policy training or claim equivalent capability?",
+      "expected_source_ids": [
+        "P04"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "not",
+          "no",
+          "instead"
+        ],
+        [
+          "bounded",
+          "scope",
+          "training"
+        ]
+      ],
+      "expected_answer_summary": "No; EvidenceDesk is a bounded inspectable workflow and does not reproduce the large-scale policy training."
+    },
+    {
+      "id": "A09",
+      "category": "answerable",
+      "question": "How many browsing questions are included in BrowseComp?",
+      "expected_source_ids": [
+        "P05"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "1,266",
+          "1266"
+        ]
+      ],
+      "expected_answer_summary": "BrowseComp contains 1,266 browsing questions."
+    },
+    {
+      "id": "A10",
+      "category": "answerable",
+      "question": "What user-query capabilities are not fully captured by BrowseComp's short-answer browsing tasks?",
+      "expected_source_ids": [
+        "P05"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "ambiguous",
+          "ambiguity"
+        ],
+        [
+          "long",
+          "reports"
+        ]
+      ],
+      "expected_answer_summary": "The notes identify ambiguity and long-form reports as limitations of the capability test."
+    },
+    {
+      "id": "A11",
+      "category": "answerable",
+      "question": "What context does CiteEval consider beyond a single cited passage?",
+      "expected_source_ids": [
+        "P06"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "sources",
+          "retrieval"
+        ],
+        [
+          "question",
+          "query"
+        ],
+        [
+          "generated",
+          "text"
+        ]
+      ],
+      "expected_answer_summary": "It considers retrieval sources, the user question, and generated text."
+    },
+    {
+      "id": "A12",
+      "category": "answerable",
+      "question": "Does an exact quote existing in a source prove the surrounding claim is supported? Explain using the CiteEval note.",
+      "expected_source_ids": [
+        "P06"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "not",
+          "no",
+          "cannot"
+        ],
+        [
+          "claim",
+          "support"
+        ]
+      ],
+      "expected_answer_summary": "No. Mechanical quote validity is distinct from substantive claim support."
+    },
+    {
+      "id": "A13",
+      "category": "answerable",
+      "question": "How many expert tasks and fields does DeepResearch Bench describe?",
+      "expected_source_ids": [
+        "P07"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "100"
+        ],
+        [
+          "22"
+        ]
+      ],
+      "expected_answer_summary": "It describes 100 expert-created tasks spanning 22 fields."
+    },
+    {
+      "id": "A14",
+      "category": "answerable",
+      "question": "Which evaluation aspects does DeepResearch Bench distinguish?",
+      "expected_source_ids": [
+        "P07"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "report"
+        ],
+        [
+          "citation",
+          "information"
+        ]
+      ],
+      "expected_answer_summary": "It separates report quality from information collection and accurate citation."
+    },
+    {
+      "id": "A15",
+      "category": "answerable",
+      "question": "Which two failure modes does GRACE address?",
+      "expected_source_ids": [
+        "P08"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "grounding",
+          "evidence"
+        ],
+        [
+          "insufficient",
+          "fabricated"
+        ]
+      ],
+      "expected_answer_summary": "It addresses insufficient explicit grounding and fabricated answers under insufficient retrieved evidence."
+    },
+    {
+      "id": "A16",
+      "category": "answerable",
+      "question": "Is GRACE merely prompt-based refusal, or does it train an answering-and-abstention policy?",
+      "expected_source_ids": [
+        "P08"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "training",
+          "trains",
+          "policy"
+        ],
+        [
+          "reward",
+          "reinforcement"
+        ]
+      ],
+      "expected_answer_summary": "It trains a policy with staged rewards for evidence sufficiency and answering/abstaining."
+    },
+    {
+      "id": "A17",
+      "category": "answerable",
+      "question": "How many tasks, domains, and binary rubric items are in DeepResearch Bench II?",
+      "expected_source_ids": [
+        "P09"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "132"
+        ],
+        [
+          "22"
+        ],
+        [
+          "9,430",
+          "9430"
+        ]
+      ],
+      "expected_answer_summary": "It contains 132 tasks across 22 domains and 9,430 binary rubric items."
+    },
+    {
+      "id": "A18",
+      "category": "answerable",
+      "question": "What three assessment dimensions does DeepResearch Bench II separate?",
+      "expected_source_ids": [
+        "P09"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "recall"
+        ],
+        [
+          "analysis"
+        ],
+        [
+          "presentation"
+        ]
+      ],
+      "expected_answer_summary": "It separates information recall, analysis, and presentation."
+    },
+    {
+      "id": "A19",
+      "category": "answerable",
+      "question": "Which bibliographic retrieval approaches does Atlas compare, and which qualities does it measure?",
+      "expected_source_ids": [
+        "P10"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "Crossref"
+        ],
+        [
+          "GPT"
+        ],
+        [
+          "coverage"
+        ],
+        [
+          "completeness"
+        ],
+        [
+          "accuracy"
+        ]
+      ],
+      "expected_answer_summary": "It compares Crossref, generic GPT, and verification-guided GPT, measuring coverage, completeness, and metadata accuracy."
+    },
+    {
+      "id": "A20",
+      "category": "answerable",
+      "question": "According to the data-centric Agentic RAG survey, what do interactive agent tasks require beyond static question-document pairs?",
+      "expected_source_ids": [
+        "P11"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_abstain": false,
+      "keyword_groups": [
+        [
+          "planning"
+        ],
+        [
+          "retrieval"
+        ],
+        [
+          "trajectories"
+        ]
+      ],
+      "expected_answer_summary": "They require planning, retrieval decisions, and rich interactive trajectories."
+    },
+    {
+      "id": "U01",
+      "category": "unanswerable",
+      "question": "Using only the curated notes, give the exact GPU hours used to train Search-R1.",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [
+        "P02"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "The notes do not state GPU hours."
+    },
+    {
+      "id": "U02",
+      "category": "unanswerable",
+      "question": "Using only the curated notes, list the exact numerical reward weights used by GRACE.",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [
+        "P08"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "The notes describe staged rewards but do not supply a numerical weight vector."
+    },
+    {
+      "id": "U03",
+      "category": "unanswerable",
+      "question": "Using only the curated notes, give DeepResearcher's exact training-corpus size.",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [
+        "P04"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "The notes do not supply that training-corpus size."
+    },
+    {
+      "id": "U04",
+      "category": "unanswerable",
+      "question": "What retrieval top-k setting maximizes EvidenceDesk accuracy for every possible future question?",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "No universal optimum or future outcome is established by these sources."
+    },
+    {
+      "id": "U05",
+      "category": "unanswerable",
+      "question": "Summarize the findings of source P12 in the bundled corpus.",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "P12 is not present; the agent should not invent a source."
+    },
+    {
+      "id": "U06",
+      "category": "unanswerable",
+      "question": "Report EvidenceDesk's measured accuracy on the full BrowseComp benchmark.",
+      "expected_abstain": true,
+      "expected_source_ids": [],
+      "relevant_but_insufficient_sources": [
+        "P05"
+      ],
+      "expected_tool_role": "rag_retrieval",
+      "expected_answer_summary": "The corpus reports BrowseComp's design, not an EvidenceDesk run on the full benchmark."
+    },
+    {
+      "id": "T01",
+      "category": "tool_routing",
+      "question": "Look up the Crossref metadata for DOI 10.18653/v1/2025.acl-long.1574.",
+      "expected_tool_role": "crossref_lookup",
+      "expected_source_ids": [
+        "P06"
+      ],
+      "expected_arguments": {
+        "doi": "10.18653/v1/2025.acl-long.1574"
+      }
+    },
+    {
+      "id": "T02",
+      "category": "tool_routing",
+      "question": "Verify the Crossref record for DOI 10.18653/v1/2025.wasp-main.14 and show its authors and publication year.",
+      "expected_tool_role": "crossref_lookup",
+      "expected_source_ids": [
+        "P10"
+      ],
+      "expected_arguments": {
+        "doi": "10.18653/v1/2025.wasp-main.14"
+      }
+    },
+    {
+      "id": "T03",
+      "category": "tool_routing",
+      "question": "Search arXiv for recent papers on grounded response and reliable abstention, and show two matching records.",
+      "expected_tool_role": "arxiv_search",
+      "expected_source_ids": [],
+      "expected_arguments": {
+        "query_contains_any": [
+          "abstention",
+          "grounded"
+        ]
+      },
+      "dynamic_result_note": "Do not predeclare which live search results will be returned."
+    },
+    {
+      "id": "T04",
+      "category": "tool_routing",
+      "question": "Find the arXiv record with identifier 2504.12516.",
+      "expected_tool_role": "arxiv_search",
+      "expected_source_ids": [
+        "P05"
+      ],
+      "expected_arguments": {
+        "identifier": "2504.12516"
+      }
+    },
+    {
+      "id": "T05",
+      "category": "tool_routing",
+      "question": "Run the custom citation-and-quote audit for source P08 using this quoted curated-note passage: \"GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient.\"",
+      "expected_tool_role": "evidence_audit",
+      "expected_source_ids": [
+        "P08"
+      ],
+      "expected_arguments": {
+        "source_id": "P08",
+        "quote": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient."
+      },
+      "expected_mechanical_audit": {
+        "source_exists": true,
+        "quote_exists_in_curated_note": true
+      },
+      "scope_note": "This expected validity does not certify semantic truth or original-paper wording."
+    },
+    {
+      "id": "T06",
+      "category": "tool_routing",
+      "question": "Run the custom evidence audit on a citation to source P99 with the quote 'This system guarantees perfect accuracy.'",
+      "expected_tool_role": "evidence_audit",
+      "expected_source_ids": [],
+      "expected_arguments": {
+        "source_id": "P99",
+        "quote": "This system guarantees perfect accuracy."
+      },
+      "expected_mechanical_audit": {
+        "source_exists": false,
+        "unknown_source_ids": [
+          "P99"
+        ]
+      }
+    }
+  ]
+}

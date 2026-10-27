@@ -1,0 +1,339 @@
+{
+  "name": "EvidenceDesk curated research-note corpus",
+  "created_on": "2026-10-26",
+  "description": "Eleven short original research notes based on verified primary papers. Six notes also include one short, attributed CC-BY-4.0 passage. This is NOT a full-paper or full-abstract dataset.",
+  "documents": [
+    {
+      "id": "P01",
+      "title": "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG",
+      "year": 2026,
+      "authors": [
+        "Aditi Singh",
+        "Abul Ehtesham",
+        "Saket Kumar",
+        "Tala Talaei Khoei",
+        "Athanasios V. Vasilakos"
+      ],
+      "url": "https://arxiv.org/abs/2501.09136v4",
+      "doi": "10.48550/arXiv.2501.09136",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "This survey explains how an agent can control retrieval instead of always using a fixed retrieve-then-answer sequence. Its organizing dimensions cover the number of agents, control structure, autonomy, and knowledge representation. It also identifies evaluation, coordination, memory, efficiency, and governance as unresolved design issues. It is background for choosing a small, explicit agent workflow, not evidence of EvidenceDesk's performance.\n\nScope: A survey and taxonomy do not establish that any particular project architecture improves task outcomes.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2501.09136v4",
+        "https://arxiv.org/abs/2501.09136"
+      ],
+      "source_paper_license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "first_release_date": "2025-01-15",
+      "version_date": "2026-04-01"
+    },
+    {
+      "id": "P02",
+      "title": "Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning",
+      "year": 2025,
+      "authors": [
+        "Bowen Jin",
+        "Hansi Zeng",
+        "Zhenrui Yue",
+        "Jinsung Yoon",
+        "Sercan Arik",
+        "Dong Wang",
+        "Hamed Zamani",
+        "Jiawei Han"
+      ],
+      "url": "https://arxiv.org/abs/2503.09516v5",
+      "doi": "10.48550/arXiv.2503.09516",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "Search-R1 learns to issue search queries while reasoning. Its training includes multiple search interactions, masks retrieved tokens during optimization, and rewards final outcomes. The paper evaluates question answering across seven datasets. Its relevance is learned search control: merely adding a search API to an application is not the same training procedure, and its published gains are not results for EvidenceDesk.\n\nScope: The method requires policy training; its QA results cannot be transferred to an untrained project agent.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2503.09516v5",
+        "https://arxiv.org/abs/2503.09516"
+      ],
+      "source_paper_license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "first_release_date": "2025-03-12",
+      "version_date": "2025-08-05"
+    },
+    {
+      "id": "P03",
+      "title": "An Empirical Study on Reinforcement Learning for Reasoning-Search Interleaved LLM Agents",
+      "year": 2025,
+      "authors": [
+        "Bowen Jin",
+        "Jinsung Yoon",
+        "Priyanka Kargupta",
+        "Sercan O. Arik",
+        "Jiawei Han"
+      ],
+      "url": "https://arxiv.org/abs/2505.15117v1",
+      "doi": "10.48550/arXiv.2505.15117",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "This empirical study varies reward formulation, model initialization and scale, and the search engine in reasoning-search reinforcement learning. It reports that format rewards, the chosen underlying model, and retrieval infrastructure affect outcomes. For a small project, its methodological lesson is to document the model and search configuration and change one component at a time rather than attributing every difference to agentic design.\n\nScope: Its conclusions concern the studied RL settings and do not determine the best settings for a small frozen-model application.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2505.15117v1",
+        "https://arxiv.org/abs/2505.15117"
+      ],
+      "source_paper_license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "first_release_date": "2025-05-21",
+      "version_date": "2025-05-21"
+    },
+    {
+      "id": "P04",
+      "title": "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "year": 2025,
+      "authors": [
+        "Yuxiang Zheng",
+        "Dayuan Fu",
+        "Xiangkun Hu",
+        "Xiaojie Cai",
+        "Lyumanshan Ye",
+        "Pengrui Lu",
+        "Pengfei Liu"
+      ],
+      "url": "https://aclanthology.org/2025.emnlp-main.22/",
+      "doi": "10.18653/v1/2025.emnlp-main.22",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "DeepResearcher trains research agents through reinforcement learning with real web-search interactions. It includes browsing agents for extracting information from varied pages and examines planning, cross-checking, redirection, and honest handling of missing answers. Its research question concerns learned behavior in noisy web environments. EvidenceDesk instead provides a bounded, inspectable student-scale workflow; no performance equivalence is implied.\n\nScope: Large-scale policy training and open-web evaluation are outside the scope and compute budget of the proposed project.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://aclanthology.org/2025.emnlp-main.22/",
+        "https://arxiv.org/abs/2504.03160"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": "2025-04-04",
+      "version_date": "2025-11",
+      "source_excerpt": {
+        "text": "Unlike RAG approaches reliant on fixed corpora, DeepResearcher trains agents to navigate the noisy, dynamic open web.",
+        "location": "Abstract",
+        "url": "https://aclanthology.org/2025.emnlp-main.22/",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://aclanthology.org/faq/copyright/",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    },
+    {
+      "id": "P05",
+      "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+      "year": 2025,
+      "authors": [
+        "Jason Wei",
+        "Zhiqing Sun",
+        "Spencer Papay",
+        "Scott McKinney",
+        "Jeffrey Han",
+        "Isa Fulford",
+        "Hyung Won Chung",
+        "Alex Tachard Passos",
+        "William Fedus",
+        "Amelia Glaese"
+      ],
+      "url": "https://arxiv.org/abs/2504.12516v1",
+      "doi": "10.48550/arXiv.2504.12516",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "BrowseComp contains 1,266 browsing questions designed to require persistent searches for difficult, entangled information. Reference answers are short so predictions can be checked. The authors explicitly distinguish this capability test from the full distribution of user requests, such as ambiguous tasks and long reports. A project evaluation should similarly state what its small test set does and does not cover.\n\nScope: Short-answer browsing performance does not by itself measure faithful long-form synthesis or realistic user-query coverage.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2504.12516v1",
+        "https://arxiv.org/abs/2504.12516"
+      ],
+      "source_paper_license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "first_release_date": "2025-04-16",
+      "version_date": "2025-04-16"
+    },
+    {
+      "id": "P06",
+      "title": "CiteEval: Principle-Driven Citation Evaluation for Source Attribution",
+      "year": 2025,
+      "authors": [
+        "Yumo Xu",
+        "Peng Qi",
+        "Jifan Chen",
+        "Kunlun Liu",
+        "Rujun Han",
+        "Lan Liu",
+        "Bonan Min",
+        "Vittorio Castelli",
+        "Arshit Gupta",
+        "Zhiguo Wang"
+      ],
+      "url": "https://aclanthology.org/2025.acl-long.1574/",
+      "doi": "10.18653/v1/2025.acl-long.1574",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "CiteEval argues that evaluating a citation requires more context than testing entailment against a single cited passage. Its framework considers retrieval sources, the user question, and generated text; CiteBench supplies human citation judgments, while CiteEval-Auto supplies model-based metrics. This motivates separating mechanical citation validity from substantive claim support. An exact quote can exist in a source without proving the surrounding claim.\n\nScope: A deterministic source-ID and quotation check is much narrower than the paper's contextual citation-quality evaluation.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://aclanthology.org/2025.acl-long.1574/",
+        "https://arxiv.org/abs/2506.01829"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": "2025-06-02",
+      "version_date": "2025-07",
+      "source_excerpt": {
+        "text": "Citation quality is crucial in information-seeking systems, directly influencing trust and the effectiveness of information access.",
+        "location": "Abstract",
+        "url": "https://aclanthology.org/2025.acl-long.1574/",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://aclanthology.org/faq/copyright/",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    },
+    {
+      "id": "P07",
+      "title": "DeepResearch Bench: A Comprehensive Benchmark for Deep Research Agents",
+      "year": 2025,
+      "authors": [
+        "Mingxuan Du",
+        "Benfeng Xu",
+        "Chiwei Zhu",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "url": "https://arxiv.org/abs/2506.11763v1",
+      "doi": "10.48550/arXiv.2506.11763",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "DeepResearch Bench evaluates deep-research systems using 100 expert-crafted tasks spanning 22 fields. It distinguishes report quality from the collection and accurate citation of information. This separation is useful for EvidenceDesk: an application can return valid citations yet still omit important information or produce weak synthesis. The benchmark's task counts and published outcomes describe that paper, not this project's own evaluation.\n\nScope: Benchmark-scale expert tasks and judge protocols exceed the coverage of a small classroom evaluation.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2506.11763v1",
+        "https://arxiv.org/abs/2506.11763"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": "2025-06-13",
+      "version_date": "2025-06-13",
+      "source_excerpt": {
+        "text": "a benchmark consisting of 100 PhD-level research tasks, each meticulously crafted by domain experts across 22 distinct fields.",
+        "location": "Abstract",
+        "url": "https://arxiv.org/abs/2506.11763v1",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://arxiv.org/abs/2506.11763",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    },
+    {
+      "id": "P08",
+      "title": "GRACE: Reinforcement Learning for Grounded Response and Abstention under Contextual Evidence",
+      "year": 2026,
+      "authors": [
+        "Yibo Zhao",
+        "Jiapeng Zhu",
+        "Zichen Ding",
+        "Xiang Li"
+      ],
+      "url": "https://arxiv.org/abs/2601.04525v1",
+      "doi": "10.48550/arXiv.2601.04525",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "GRACE addresses two failure modes: responses lacking explicit grounding and fabricated answers when retrieved evidence is insufficient. It constructs training data with heterogeneous retrievers and applies a staged reward to evidence sufficiency, supporting evidence, and answering or abstaining. Its method is policy training. EvidenceDesk should test its own simpler abstention behavior rather than borrow the paper's reported performance claims.\n\nScope: Its reinforcement-learning results do not validate prompt-only abstention or deterministic audits in a different application.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2601.04525v1",
+        "https://arxiv.org/abs/2601.04525"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": "2026-01-08",
+      "version_date": "2026-01-08",
+      "source_excerpt": {
+        "text": "providing correct answers without explicit grounded evidence and producing fabricated responses when the retrieved context is insufficient.",
+        "location": "Abstract",
+        "url": "https://arxiv.org/abs/2601.04525v1",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://arxiv.org/abs/2601.04525",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    },
+    {
+      "id": "P09",
+      "title": "DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Reports",
+      "year": 2026,
+      "authors": [
+        "Ruizhe Li",
+        "Mingxuan Du",
+        "Benfeng Xu",
+        "Chiwei Zhu",
+        "Xiaorui Wang",
+        "Zhendong Mao"
+      ],
+      "url": "https://arxiv.org/abs/2601.08536v3",
+      "doi": "10.48550/arXiv.2601.08536",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "DeepResearch Bench II uses 132 research tasks across 22 domains and 9,430 binary rubric items derived from expert investigative reports. Its assessment separates information recall, analysis, and presentation. The paper illustrates why a convincing research report needs more evaluation than plausible prose. EvidenceDesk adopts transparent, inspectable classroom test criteria, without claiming to recreate the benchmark or its expert annotation effort.\n\nScope: Its expert-review effort and broad research tasks are not reproduced by the classroom project.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://arxiv.org/abs/2601.08536v3",
+        "https://arxiv.org/abs/2601.08536"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "first_release_date": "2026-01-13",
+      "version_date": "2026-09-10"
+    },
+    {
+      "id": "P10",
+      "title": "Atlas: Customizing Large Language Models for Reliable Bibliographic Retrieval and Verification",
+      "year": 2025,
+      "authors": [
+        "Akash Kodali",
+        "Hailu Xu",
+        "Wenlu Zhang",
+        "Xin Qin"
+      ],
+      "url": "https://aclanthology.org/2025.wasp-main.14/",
+      "doi": "10.18653/v1/2025.wasp-main.14",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "Atlas compares a Crossref resolver, generic GPT prompting, and a verification-guided GPT configuration for retrieving bibliographic records. It evaluates coverage, field completeness, and metadata accuracy against Crossref. This is closely related to EvidenceDesk's bibliographic tool, so Crossref integration alone is not an original contribution. EvidenceDesk's different scope combines those metadata checks with local retrieved evidence, an audit trail, and explicit unsupported-question handling.\n\nScope: Bibliographic field accuracy is different from establishing that a response's substantive claims are supported by paper passages.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://aclanthology.org/2025.wasp-main.14/"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": "2025-12-23",
+      "version_date": "2025-12-23",
+      "source_excerpt": {
+        "text": "Across heterogeneous reference inputs, we evaluate retrieval coverage, field completeness, and metadata accuracy against Crossref ground truth.",
+        "location": "Abstract",
+        "url": "https://aclanthology.org/2025.wasp-main.14/",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://aclanthology.org/faq/copyright/",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    },
+    {
+      "id": "P11",
+      "title": "Data-Centric Perspectives on Agentic Retrieval-Augmented Generation: A Survey",
+      "year": 2026,
+      "authors": [
+        "Jingwen Deng",
+        "Jihao Huang",
+        "Zhen Hao Wong",
+        "Hao Liang",
+        "Quanqing Xu",
+        "Bin Cui",
+        "Wentao Zhang"
+      ],
+      "url": "https://aclanthology.org/2026.findings-acl.78/",
+      "doi": "10.18653/v1/2026.findings-acl.78",
+      "license": "CC-BY-4.0 (original project-curated note)",
+      "text": "This survey frames agentic RAG around data collection, preprocessing and task formulation, task construction, evaluation data, and training-data enhancement. It emphasizes that interactive agent tasks need planning, retrieval decisions, and rich trajectories rather than only static question-document pairs. For EvidenceDesk, this supports recording tool sequences and failures alongside answer metrics and clearly documenting how a small evaluation set was constructed.\n\nScope: A survey's dataset taxonomy is background, not direct experimental validation of EvidenceDesk's small test set.\nEvidenceDesk outcomes require separate measurement with the project's own evaluation cases.",
+      "source_type": "curated_note",
+      "provenance": [
+        "https://aclanthology.org/2026.findings-acl.78/"
+      ],
+      "source_paper_license": "https://creativecommons.org/licenses/by/4.0/",
+      "first_release_date": null,
+      "version_date": "2026-07",
+      "source_excerpt": {
+        "text": "Agentic RAG addresses these limitations by enabling LLM agents to actively decompose tasks, issue exploratory queries, and refine evidence through iterative retrieval.",
+        "location": "Abstract",
+        "url": "https://aclanthology.org/2026.findings-acl.78/",
+        "license": "CC-BY-4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "license_proof": "https://aclanthology.org/faq/copyright/",
+        "alterations": "Selected short excerpt; wording unchanged."
+      }
+    }
+  ]
+}

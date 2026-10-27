@@ -1,0 +1,10 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "tests_run": 41,
+  "passed": 41,
+  "failed": 0,
+  "errors": 0,
+  "observed_seconds": 0.353,
+  "date": "2026-10-26",
+  "scope": "Offline deterministic tests with stub embeddings and mocked HTTP; no LLM correctness claim."
+}

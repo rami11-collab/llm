@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>EvidenceDesk — Research with inspectable evidence</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#message-input">Skip to research question</a>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <div><h1>EvidenceDesk</h1><p>Research with inspectable evidence</p></div>
+    </div>
+    <nav class="header-actions" aria-label="Workspace actions">
+      <button type="button" class="button subtle" id="library-button">Source library <span id="library-count">0</span></button>
+      <button type="button" class="button subtle" id="audit-button">Audit a quotation</button>
+      <button type="button" class="button primary" id="new-conversation">New conversation</button>
+    </nav>
+  </header>
+
+  <div class="status-strip" aria-label="Local system status">
+    <span id="health-status" class="status-label pending"><span class="status-dot" aria-hidden="true"></span>Checking local models</span>
+    <span class="model-detail" id="model-label">Local LLM</span>
+    <span class="model-detail" id="embedding-label">Vector embeddings</span>
+    <span class="session-label" id="session-label"></span>
+    <button type="button" class="text-button" id="refresh-status">Refresh status</button>
+  </div>
+
+  <main class="workspace">
+    <section class="conversation" aria-labelledby="conversation-heading">
+      <div class="section-heading">
+        <div><p class="eyebrow">Research workspace</p><h2 id="conversation-heading">Ask. Inspect. Follow up.</h2></div>
+        <label class="mode-label">Mode
+          <select id="mode-select" aria-label="Agent mode">
+            <option value="agent">Agent + evidence audit</option>
+            <option value="basic">Retrieval baseline</option>
+            <option value="llm">LLM baseline</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="conversation-log" id="conversation-log" role="log" aria-live="polite" aria-relevant="additions" tabindex="0">
+        <section class="welcome" id="welcome">
+          <p class="eyebrow">A local research assistant</p>
+          <h3>Start with the evidence.</h3>
+          <p>Ask about the indexed research papers, look up a DOI, or search arXiv. Open the evidence panel to inspect passages and tool outcomes.</p>
+          <div class="quick-prompts" aria-label="Example questions">
+            <button type="button" class="quick-prompt" data-prompt="What does CiteEval evaluate?"><span>Corpus question</span>What does CiteEval evaluate?</button>
+            <button type="button" class="quick-prompt" data-prompt="Check DOI 10.18653/v1/2025.wasp-main.14"><span>Crossref DOI tool</span>Check a research citation</button>
+            <button type="button" class="quick-prompt" data-prompt="Search arXiv for agentic retrieval augmented generation"><span>arXiv search tool</span>Find papers on agentic RAG</button>
+            <button type="button" class="quick-prompt" data-prompt="What is EvidenceDesk accuracy on LegalBench?"><span>Unsupported question</span>Ask beyond the available evidence</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="request-status" id="request-status" hidden aria-live="polite">
+        <span class="spinner" aria-hidden="true"></span><span id="request-status-text">Processing request</span>
+        <button type="button" class="text-button" id="stop-waiting">Stop waiting</button>
+      </div>
+      <div class="error-notice" id="request-error" hidden role="alert"></div>
+
+      <form id="chat-form" class="composer">
+        <label for="message-input" class="sr-only">Research question</label>
+        <textarea id="message-input" rows="2" maxlength="3000" placeholder="What does CiteEval evaluate?" required></textarea>
+        <div class="composer-bottom">
+          <label class="cache-setting"><input type="checkbox" id="use-cache" checked> Allow cached external results</label>
+          <span class="keyboard-hint">Enter to send · Shift + Enter for a new line</span>
+          <button type="submit" class="button primary send-button" id="send-button">Ask EvidenceDesk <span aria-hidden="true">↗</span></button>
+        </div>
+      </form>
+      <p class="workspace-footnote">Inspect source passages and audit scope before relying on an answer. Retrieved text and external services can be incomplete.</p>
+    </section>
+
+    <aside class="evidence-workspace" aria-labelledby="evidence-heading">
+      <div class="evidence-heading"><div><p class="eyebrow">Inspectable record</p><h2 id="evidence-heading">Evidence &amp; tools</h2></div><span id="response-time" class="time-label"></span></div>
+      <div class="evidence-tabs" role="tablist" aria-label="Evidence panels">
+        <button id="tab-evidence" type="button" role="tab" aria-selected="true" aria-controls="panel-evidence" data-panel="evidence">Passages <span id="sources-count">0</span></button>
+        <button id="tab-audit" type="button" role="tab" aria-selected="false" aria-controls="panel-audit" data-panel="audit" tabindex="-1">Audit <span id="claims-count">0</span></button>
+        <button id="tab-trace" type="button" role="tab" aria-selected="false" aria-controls="panel-trace" data-panel="trace" tabindex="-1">Tool trace</button>
+      </div>
+      <section id="panel-evidence" class="evidence-panel" role="tabpanel" aria-labelledby="tab-evidence"><div class="panel-empty"><span class="empty-symbol" aria-hidden="true">“ ”</span><h3>Passages appear here</h3><p>Run a question to see the sources the system actually retrieved.</p></div></section>
+      <section id="panel-audit" class="evidence-panel" role="tabpanel" aria-labelledby="tab-audit" hidden><div class="panel-empty"><h3>No audit yet</h3><p>Claim checks and their scope will appear after an agent response.</p></div></section>
+      <section id="panel-trace" class="evidence-panel" role="tabpanel" aria-labelledby="tab-trace" hidden><div class="panel-empty"><h3>No tool calls yet</h3><p>This panel shows actual planning, retrieval, and tool outcomes.</p></div></section>
+    </aside>
+  </main>
+
+  <dialog id="library-dialog" class="workspace-dialog" aria-labelledby="library-title">
+    <div class="dialog-heading"><div><p class="eyebrow">Corpus provenance</p><h2 id="library-title">Source library</h2></div><button type="button" class="icon-button" data-close-dialog="library-dialog" aria-label="Close source library">×</button></div>
+    <p class="dialog-description">These are the documents available to the local retrieval index. Licenses and source links remain visible.</p>
+    <div id="library-content" class="library-content"><p>Loading source library…</p></div>
+  </dialog>
+
+  <dialog id="quotation-dialog" class="workspace-dialog quotation-dialog" aria-labelledby="quotation-title">
+    <div class="dialog-heading"><div><p class="eyebrow">Custom evidence tool</p><h2 id="quotation-title">Audit a quotation</h2></div><button type="button" class="icon-button" data-close-dialog="quotation-dialog" aria-label="Close quotation audit">×</button></div>
+    <p class="dialog-description">Check a claim and quoted passage against an indexed source. The returned audit states exactly what it checked.</p>
+    <form id="quotation-form" class="quotation-form">
+      <label for="quotation-source">Indexed source</label><select id="quotation-source" required><option value="P06">P06 — CiteEval</option></select>
+      <label for="quotation-claim">Claim</label><textarea id="quotation-claim" rows="2" maxlength="2000" placeholder="Enter the claim to audit" required></textarea>
+      <label for="quotation-text">Quoted supporting passage</label><textarea id="quotation-text" rows="3" maxlength="5000" placeholder="Paste the exact quotation from the selected source" required></textarea>
+      <button type="submit" class="button primary" id="quotation-submit">Run quotation audit</button>
+    </form>
+    <div id="quotation-result" class="quotation-result" aria-live="polite"></div>
+  </dialog>
+</body>
+</html>
