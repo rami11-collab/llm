@@ -1,0 +1,23 @@
+{
+  "name": "EvidenceDesk",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "8gb",
+    "storage": "16gb"
+  },
+  "postCreateCommand": "bash scripts/setup_codespaces.sh",
+  "postStartCommand": "bash scripts/run_codespaces.sh",
+  "waitFor": "postCreateCommand",
+  "forwardPorts": [8010],
+  "portsAttributes": {
+    "8010": {
+      "label": "EvidenceDesk",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    },
+    "8091": {"onAutoForward": "ignore"},
+    "8092": {"onAutoForward": "ignore"}
+  },
+  "otherPortsAttributes": {"onAutoForward": "ignore"}
+}
